@@ -202,7 +202,7 @@ const conceptosJS = () => {
     const {nombreRector, apellidoRector} = rector;
     console.log(nombreRector) */
 
-    //En un solo paso
+    //En un solo paso, desestructurado
     const {estudiantes, rector:{nombreRector, apellidoRector}} = universidad;
     console.log(nombreRector);
     console.log(apellidoRector);
@@ -210,6 +210,8 @@ const conceptosJS = () => {
 
 
 }
+
+//const desestructuracion = (automovil) => {
 const desestructuracion = ({modelo, anio, color,marca}) => {
     console.log("Entro al método Desestructuración de Objetos");
     console.log(marca);
