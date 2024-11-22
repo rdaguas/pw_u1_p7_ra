@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/estiloscalculadora.css">
+    <script src="../js/calculadora.js"></script>
 </head>
 
 <body>
@@ -13,21 +14,21 @@
     <nav></nav>
     <section>
         <div class="container">
-            <div class="calculadora">
+            <div id="id-display" class="calculadora">
                 <div class="display">
-                    1+2
+                    0
                 </div>
 
                 <button id="c">C</button>
                 <button>&larr;</button>
                 <button>%</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
+                <button onclick="recibirValor(7)">7</button>
+                <button onclick="recibirValor(8)">8</button>
+                <button onclick="recibirValor(9)">9</button>
                 <button>X</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
+                <button onclick="recibirValor(4)">4</button>
+                <button onclick="recibirValor(5)">5</button>
+                <button onclick="recibirValor(6)">6</button>
                 <button>-</button>
                 <button>1</button>
                 <button>2</button>

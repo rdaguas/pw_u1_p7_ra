@@ -9,25 +9,54 @@
     grid-template-columns: 80px 80px 80px 80px;
     grid-template-rows: 70px 70px 70px 70px 70px 70px;
     padding: 15px;
-    /*border: solid blue;*/ 
+    /*border: solid blue;*/
     border-radius: 20px;
-    background: rgb(176, 190, 199);
+    background: rgba(130, 117, 247, 0.315);
     /* le pone el color de la sombra*/
     box-shadow: -15px 15px 15px 15px rgba(44, 44, 44, 0.634);
 }
+
 .display {
     grid-column: span 4;
     border: solid black 2px;
     padding: 10px;
     background-color: rgba(71, 148, 88, 0.448);
-    border-radius:35px;
+    border-radius: 5px;
     text-align: right;
     margin-bottom: 20px;
     font-size: 25px;
 }
-#c{
+
+#c {
+    grid-column: span 2;
+    background: rgb(230, 181, 91);
+}
+
+#c:hover {
+    background: rgb(194, 201, 99);
+}
+
+#cero {
     grid-column: span 2;
 }
-#cero{
-    grid-column: span 2;
+
+button {
+    cursor: pointer;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 22px;
+    border: solid rgba(50, 21, 216, 0.774);
+    ;
+    background: rgba(98, 121, 105, 0.418);
+    font-size: 25px;
+    color: rgb(50, 21, 216);
+    box-shadow: 0px 0px 12px 0px rgba(44, 11, 82, 0.534);
+}
+
+button:hover {
+    background: rgba(7, 219, 120, 0.692);
+}
+
+button:active {
+    background: rgba(34, 153, 97, 0.582);
 }
