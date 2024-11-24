@@ -14,29 +14,28 @@
     <nav></nav>
     <section>
         <div class="container">
-            <div id="id-display" class="calculadora">
-                <div class="display">
+            <div class="calculadora">
+                <div id="id-display" class="display">
                     0
                 </div>
-
-                <button id="c">C</button>
-                <button>&larr;</button>
-                <button>%</button>
+                <button id="c" onclick="limpiar('C')">C</button>
+                <button onclick="borrar('&larr;')">&larr;</button>
+                <button onclick="seleccionarOperacion('%')">%</button>
                 <button onclick="recibirValor(7)">7</button>
                 <button onclick="recibirValor(8)">8</button>
                 <button onclick="recibirValor(9)">9</button>
-                <button>X</button>
+                <button onclick="seleccionarOperacion('X')">X</button>
                 <button onclick="recibirValor(4)">4</button>
                 <button onclick="recibirValor(5)">5</button>
                 <button onclick="recibirValor(6)">6</button>
-                <button>-</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
-                <button id="cero">0</button>
-                <button>.</button>
-                <button>=</button>
+                <button onclick="seleccionarOperacion('-')">-</button>
+                <button onclick="recibirValor(1)">1</button>
+                <button onclick="recibirValor(2)">2</button>
+                <button onclick="recibirValor(3)">3</button>
+                <button onclick="seleccionarOperacion('+')">+</button>
+                <button id="cero" onclick="recibirValor(0)">0</button>
+                <button onclick="agregarDecimal()">.</button>
+                <button onclick="calcular('=')">=</button>
             </div>
         </div>
 
